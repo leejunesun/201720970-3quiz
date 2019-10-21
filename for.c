@@ -1,20 +1,20 @@
 #include <stdio.h>
-void swap(int a, int b):
+void swap(int pa, int pb):
 int main()
 {
-	int a=5;
-	int b=10;
+	int pa=5;
+	int pb=10;
 
-	printf("befor change a: %d b: %d \n",a,b);
+	printf("befor change a: %d b: %d \n",pa,pb);
 
-	swap(&a,&b);
-	printf("after change a: %d b: %d \n",a,b);
+	swap(&pa,&pb);
+	printf("after change a: %d b: %d \n",pa,pb);
 }
-void swap(int*a, int *b)
+void swap(int*pa, int *pb)
 {
 	int temp;
 
-	temp=*a;
-	*a=*b;
-	*b=temp;
+	temp=*pa;
+	*pa=*pb;
+	*pb=temp;
 }
